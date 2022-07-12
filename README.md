@@ -1,6 +1,9 @@
 # flutter_ui_design
 
-A new Flutter project.
+A new Flutter Ui project.
+
+![myDiary](https://user-images.githubusercontent.com/44537702/178483080-8ba94a1e-a26e-4c2f-9824-783d9e5db1d6.jpg)
+
 
 ## Getting Started
 
