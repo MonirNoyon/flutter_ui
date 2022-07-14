@@ -4,9 +4,9 @@ A new Flutter Ui project.
 
 
 ##Screen shots 
-<img src="assets/screenshot/diary_home.jpg" height="500em" />
+<img src="assets/screenshots/diary_home.jpg" height="500em" />
 
-<img src="assets/screenshot/furniture_home.jpg" height="500em" />
+<img src="assets/screenshots/furniture_home.jpg" height="500em" />
 
 ## Getting Started
 
