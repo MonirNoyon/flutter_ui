@@ -2,8 +2,11 @@
 
 A new Flutter Ui project.
 
-![myDiary](https://user-images.githubusercontent.com/44537702/178483080-8ba94a1e-a26e-4c2f-9824-783d9e5db1d6.jpg)
 
+##Screen shots 
+<img src="assets/screenshot/diary_home.jpg" height="500em" />
+
+<img src="assets/screenshot/furniture_home.jpg" height="500em" />
 
 ## Getting Started
 
