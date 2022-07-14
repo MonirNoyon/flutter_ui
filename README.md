@@ -3,10 +3,10 @@
 A new Flutter Ui project.
 
 
-##Screen shots 
+## Screen shots 
 <p float="left">
 <img src="assets/screenshots/diary_home.jpg" height="500em" />
-<img src="assets/screenshots/furniture_home.jpg" height="500em" />
+ <img src="assets/screenshots/furniture_home.jpg" height="500em" />
 </p>
 
 
