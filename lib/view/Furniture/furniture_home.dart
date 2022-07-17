@@ -89,7 +89,7 @@ class FurnitureHome extends StatelessWidget {
             ),
             SingleChildScrollView(
               physics: const BouncingScrollPhysics(),
-              padding: EdgeInsets.only(top: 8, bottom: 10),
+              padding: const EdgeInsets.only(top: 8, bottom: 10),
               scrollDirection: Axis.horizontal,
               child: Row(
                 children: [
@@ -169,82 +169,87 @@ class FurnitureHome extends StatelessWidget {
                       mainAxisSpacing: 25),
                   itemCount: chairList.length,
                   itemBuilder: (context, index) {
-                    return Container(
-                      decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(19),
-                          boxShadow: [
-                            BoxShadow(
-                                color: Colors.blue.withOpacity(0.15),
-                                offset: const Offset(0, 6),
-                                blurRadius: 2)
-                          ]),
-                      child: Stack(
-                        clipBehavior: Clip.none,
-                        children: [
-                          Positioned(
-                              top: -40,
-                              right: 10,
-                              child: Image.asset(
-                                chairList[index],
-                                height: 150,
-                                width: 120,
-                              )),
-                          Container(
-                            padding: const EdgeInsets.only(
-                                left: 15, right: 10, bottom: 12, top: 10),
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              mainAxisSize: MainAxisSize.min,
-                              children: [
-                                const Expanded(child: Text("")),
-                                Text(
-                                  "Chair",
-                                  style: GoogleFonts.robotoSlab(
-                                      color: Colors.grey),
-                                ),
-                                Text(
-                                  "Wulff",
-                                  style: GoogleFonts.robotoSlab(
-                                      color: Colors.black87, fontSize: 20),
-                                ),
-                                Spacer(),
-                                Row(
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
-                                  children: [
-                                    Text(
-                                      "\u0024 1229",
-                                      style: GoogleFonts.robotoSlab(
-                                          color: Colors.black87, fontSize: 20),
-                                    ),
-                                    Container(
-                                      height: size.height * 0.05,
-                                      width: size.width * 0.12,
-                                      decoration: BoxDecoration(
-                                          color: Colors.brown,
-                                          borderRadius:
-                                              BorderRadius.circular(15),
-                                          boxShadow: [
-                                            BoxShadow(
-                                                color: Colors.black26
-                                                    .withOpacity(0.2),
-                                                blurRadius: 7,
-                                                offset: const Offset(0, 7),
-                                                spreadRadius: 1)
-                                          ]),
-                                      child: const Icon(
-                                        CupertinoIcons.add,
-                                        color: Colors.white,
+                    return GestureDetector(
+                      onTap: (){
+                        Get.toNamed("/furniture_details");
+                      },
+                      child: Container(
+                        decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(19),
+                            boxShadow: [
+                              BoxShadow(
+                                  color: Colors.blue.withOpacity(0.15),
+                                  offset: const Offset(0, 6),
+                                  blurRadius: 2)
+                            ]),
+                        child: Stack(
+                          clipBehavior: Clip.none,
+                          children: [
+                            Positioned(
+                                top: -40,
+                                right: 10,
+                                child: Image.asset(
+                                  chairList[index],
+                                  height: 150,
+                                  width: 120,
+                                )),
+                            Container(
+                              padding: const EdgeInsets.only(
+                                  left: 15, right: 10, bottom: 12, top: 10),
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  const Expanded(child: Text("")),
+                                  Text(
+                                    "Chair",
+                                    style: GoogleFonts.robotoSlab(
+                                        color: Colors.grey),
+                                  ),
+                                  Text(
+                                    "Wulff",
+                                    style: GoogleFonts.robotoSlab(
+                                        color: Colors.black87, fontSize: 20),
+                                  ),
+                                  Spacer(),
+                                  Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Text(
+                                        "\u0024 1229",
+                                        style: GoogleFonts.robotoSlab(
+                                            color: Colors.black87, fontSize: 20),
                                       ),
-                                    )
-                                  ],
-                                )
-                              ],
-                            ),
-                          )
-                        ],
+                                      Container(
+                                        height: size.height * 0.05,
+                                        width: size.width * 0.12,
+                                        decoration: BoxDecoration(
+                                            color: Colors.brown,
+                                            borderRadius:
+                                                BorderRadius.circular(15),
+                                            boxShadow: [
+                                              BoxShadow(
+                                                  color: Colors.black26
+                                                      .withOpacity(0.2),
+                                                  blurRadius: 7,
+                                                  offset: const Offset(0, 7),
+                                                  spreadRadius: 1)
+                                            ]),
+                                        child: const Icon(
+                                          CupertinoIcons.add,
+                                          color: Colors.white,
+                                        ),
+                                      )
+                                    ],
+                                  )
+                                ],
+                              ),
+                            )
+                          ],
+                        ),
                       ),
                     );
                   }),
