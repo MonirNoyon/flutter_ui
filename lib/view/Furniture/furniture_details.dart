@@ -247,8 +247,7 @@ class FurnitureDetails extends StatelessWidget {
                    ),
                    style: GoogleFonts.robotoSlab(
                    fontSize: 18,
-                   color: Colors.grey
-
+                   color: Colors.grey,
                  ),)
 
                 ],

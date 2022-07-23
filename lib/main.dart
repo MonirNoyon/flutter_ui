@@ -3,6 +3,7 @@ import 'package:flutter_ui_design/view-model/navbar_controller.dart';
 import 'package:flutter_ui_design/view/Dairy/my_dairy.dart';
 import 'package:flutter_ui_design/view/Furniture/furniture_details.dart';
 import 'package:flutter_ui_design/view/Furniture/furniture_home.dart';
+import 'package:flutter_ui_design/view/Shoping/shopping_home.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -30,7 +31,8 @@ class MyApp extends StatelessWidget {
       ),
       getPages:[
         // GetPage(name: "/", page: ()=> const MyDiary()),
-        GetPage(name: "/", page: ()=> const FurnitureHome()),
+        // GetPage(name: "/", page: ()=> const FurnitureHome()),
+        GetPage(name: "/", page: ()=> const ShoppingHome()),
         GetPage(name: "/furniture_details", page: ()=> const FurnitureDetails()),
       ],
     );
